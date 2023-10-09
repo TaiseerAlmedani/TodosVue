@@ -1,12 +1,14 @@
 <script>
 import TodosSection from './components/TodosSection.vue';
-export default{
-  components:{
-    TodosSection
+import CardSection from './components/userCard/CardSection.vue';
+export default {
+  components: {
+    TodosSection, CardSection
   },
 }
 </script>
 
 <template>
+  <card-section></card-section>
   <todos-section />
 </template>
