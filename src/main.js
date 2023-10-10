@@ -8,7 +8,7 @@ import App from './App.vue'
 
 const routes = [
   { path: '/', component: TodosSection },
-  { path: '/about', component: CardSection },
+  { path: '/users', component: CardSection },
 ]
 
 const router = createRouter({

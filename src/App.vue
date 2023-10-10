@@ -10,19 +10,42 @@ export default {
 
 <template>
   <header class="header">
-    <a href="/"> click</a>
-    <a href="/about"> click</a>
+    <ul>
+      <li><router-link to="/">Home</router-link></li>
+      <li> <router-link to="/users">Users</router-link></li>
+    </ul>
   </header>
-   <router-link to="/">Go to Home</router-link>
-   <router-link to="/about">Go to About</router-link>
 
   <router-view></router-view>
-  
 </template>
-<style>
+
+<style scoped>
+*{
+  transition: 200ms;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 80px;
+}
 a{
-  color: black !important;
-  font-size: 20px;
-  margin-right: 20px;
+  color: steelblue;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* this will apply when the link is active */
+.router-link-active{
+  color: skyblue;
+}
+ul{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+li {
+  color: red !important;
 }
 </style>
