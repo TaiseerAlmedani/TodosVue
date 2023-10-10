@@ -45,7 +45,4 @@ ul{
   justify-content: center;
   gap: 30px;
 }
-li {
-  color: red !important;
-}
 </style>
