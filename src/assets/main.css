@@ -40,12 +40,12 @@ h1 {
   background-color: rgba(255, 255, 0, 0.601);
 }
 .done li,
-.InProgress li{
+.InProgress li {
   font-size: 2em;
   margin: 5px 0;
 }
 .done h1,
-.InProgress h1{
+.InProgress h1 {
   padding-bottom: 30px;
 }
 form {
@@ -59,7 +59,6 @@ form {
   margin-top: 20px;
   border-radius: 12px;
 }
-
 
 form input,
 form button {
@@ -103,7 +102,7 @@ button.active {
   box-shadow: 0 0 10px 2px white;
   border-radius: 12px;
 }
-#app > div > div{
+#app > div > div {
   text-align: left;
   margin-bottom: 10px;
 }

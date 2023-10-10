@@ -11,36 +11,40 @@ export default {
 <template>
   <header class="header">
     <ul>
-      <li><router-link to="/">Home</router-link></li>
+      <li> <router-link to="/">Home</router-link></li>
       <li> <router-link to="/users">Users</router-link></li>
     </ul>
   </header>
-
+  <!-- router link will be replaced with the actual component when the router link is clicked -->
+  <!-- note the component must be imported -->
   <router-view></router-view>
 </template>
 
 <style scoped>
-*{
+* {
   transition: 200ms;
 }
-header{
+
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
   height: 80px;
 }
-a{
+
+a {
   color: steelblue;
   text-decoration: none;
   font-size: 1.5em;
 }
 
 /* this will apply when the link is active */
-.router-link-active{
+.router-link-active {
   color: skyblue;
 }
-ul{
+
+ul {
   display: flex;
   justify-content: center;
   gap: 30px;
